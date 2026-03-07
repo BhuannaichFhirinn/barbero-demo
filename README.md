@@ -44,6 +44,12 @@ Barbero Demo is licensed under the [MIT License](LICENSE).
 
 ---
 
+## Related
+
+The barbero library is available on [GitHub](https://github.com/BhuannaichFhirinn/barbero) and [NPM](https://www.npmjs.com/package/barbero).
+
+---
+
 ## Acknowledgements
 
 Built to showcase [barbero](https://github.com/BhuannaichFhirinn/barbero) — available on [NPM](https://www.npmjs.com/package/barbero).
