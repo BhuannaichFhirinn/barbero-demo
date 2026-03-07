@@ -25,10 +25,10 @@ export default defineConfig({
     Components(),
     Fonts({
       google: {
-        families: [{
-          name: 'Roboto',
-          styles: 'wght@100;300;400;500;700;900',
-        }],
+        families: [
+          { name: 'Roboto', styles: 'wght@100;300;400;500;700;900' },
+          { name: 'Roboto Mono', styles: 'wght@400;500' },
+        ],
       },
     }),
     AutoImport({

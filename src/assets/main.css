@@ -1,0 +1,29 @@
+/* src/assets/main.css
+ * Global styles for barbero-demo.
+ * Uses Vuetify CSS custom properties so colours update automatically on theme switch.
+ */
+
+/* Monospace styling for function signatures */
+.signature {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background-color: rgba(var(--v-theme-on-surface), 0.06);
+    color: rgba(var(--v-theme-on-surface), 0.87);
+}
+
+/* Monospace styling for code examples */
+.example-code {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+    background-color: rgba(var(--v-theme-on-surface), 0.06);
+    color: rgba(var(--v-theme-on-surface), 0.87);
+    line-height: 1.5;
+}
