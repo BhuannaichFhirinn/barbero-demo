@@ -34,17 +34,16 @@ pnpm run preview   # preview production build locally
 
 ## Contributing
 
-See [CONTRIBUTING.md](.github/CONTRIBUTING.md).
-
----
-
-## Related
-
-- **barbero library**: [github.com/BhuannaichFhirinn/barbero](https://github.com/BhuannaichFhirinn/barbero)
-- **NPM**: [npmjs.com/package/barbero](https://www.npmjs.com/package/barbero)
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/BhuannaichFhirinn/barbero-demo).
 
 ---
 
 ## License
 
-MIT
+Barbero Demo is licensed under the [MIT License](LICENSE).
+
+---
+
+## Acknowledgements
+
+Built to showcase [barbero](https://github.com/BhuannaichFhirinn/barbero) — available on [NPM](https://www.npmjs.com/package/barbero).
