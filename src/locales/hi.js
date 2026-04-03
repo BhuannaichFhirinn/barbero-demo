@@ -35,6 +35,10 @@ export default {
       name: 'प्रकार',
       description: 'JavaScript के आदिम और संरचनात्मक प्रकारों की पहचान जाँच।',
     },
+    number: {
+      name: 'संख्या',
+      description: 'संख्यात्मक जाँच और गणितीय गुणों के लिए बूलियन प्रेडिकेट।',
+    },
   },
   card: {
     result: 'परिणाम',

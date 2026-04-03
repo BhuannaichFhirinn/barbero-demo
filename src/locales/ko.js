@@ -35,6 +35,10 @@ export default {
       name: '타입',
       description: 'JavaScript 기본 및 구조 타입 식별 검사.',
     },
+    number: {
+      name: '숫자',
+      description: '수치 검사 및 수학적 속성을 위한 불리언 조건자.',
+    },
   },
   card: {
     result: '결과',

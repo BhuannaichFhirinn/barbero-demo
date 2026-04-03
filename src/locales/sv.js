@@ -35,6 +35,10 @@ export default {
       name: 'Typer',
       description: 'Typidentitetskontroller för primitiva och strukturella JavaScript-typer.',
     },
+    number: {
+      name: 'Tal',
+      description: 'Booleska predikat för numeriska kontroller och matematiska egenskaper.',
+    },
   },
   card: {
     result: 'Resultat',

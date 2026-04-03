@@ -35,6 +35,10 @@ export default {
       name: 'Typy',
       description: 'Sprawdzanie tożsamości typów prymitywnych i strukturalnych JavaScript.',
     },
+    number: {
+      name: 'Liczba',
+      description: 'Predykaty logiczne do sprawdzania liczb i właściwości matematycznych.',
+    },
   },
   card: {
     result: 'Wynik',

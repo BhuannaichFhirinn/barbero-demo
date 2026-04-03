@@ -35,6 +35,10 @@ export default {
       name: 'Awọn Iru',
       description: 'Awọn ayẹwo idanimọ iru fun awọn iru atilẹba ati eto JavaScript.',
     },
+    number: {
+      name: 'Nọ́mbà',
+      description: 'Àwọn asọtẹlẹ Boolean fún àyẹ̀wò nọ́mbà àti àwọn ohun-ìní mathématiques.',
+    },
   },
   card: {
     result: 'Abajade',

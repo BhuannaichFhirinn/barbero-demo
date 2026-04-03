@@ -35,6 +35,10 @@ export default {
       name: 'টাইপ',
       description: 'JavaScript-এর আদিম এবং কাঠামোগত টাইপ পরিচয় পরীক্ষা।',
     },
+    number: {
+      name: 'সংখ্যা',
+      description: 'সংখ্যা পরীক্ষা এবং গাণিতিক বৈশিষ্ট্যের জন্য বুলিয়ান প্রেডিকেট।',
+    },
   },
   card: {
     result: 'ফলাফল',

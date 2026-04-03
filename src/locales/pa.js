@@ -35,6 +35,10 @@ export default {
       name: 'ਕਿਸਮਾਂ',
       description: 'JavaScript ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਅਤੇ ਢਾਂਚਾਗਤ ਕਿਸਮਾਂ ਦੀ ਪਛਾਣ ਜਾਂਚ।',
     },
+    number: {
+      name: 'ਸੰਖਿਆ',
+      description: 'ਸੰਖਿਆਤਮਕ ਜਾਂਚਾਂ ਅਤੇ ਗਣਿਤ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਲਈ ਬੁਲੀਅਨ ਪ੍ਰੇਡੀਕੇਟਸ।',
+    },
   },
   card: {
     result: 'ਨਤੀਜਾ',

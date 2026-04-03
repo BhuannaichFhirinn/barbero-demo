@@ -35,6 +35,10 @@ export default {
       name: 'اقسام',
       description: 'JavaScript کے بنیادی اور ساختی اقسام کی شناخت کی جانچ۔',
     },
+    number: {
+      name: 'عدد',
+      description: 'عددی جانچ اور ریاضیاتی خصوصیات کے لیے بولین پریڈیکیٹز۔',
+    },
   },
   card: {
     result: 'نتیجہ',

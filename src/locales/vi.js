@@ -35,6 +35,10 @@ export default {
       name: 'Kiểu',
       description: 'Kiểm tra nhận dạng kiểu cho các kiểu nguyên thủy và cấu trúc JavaScript.',
     },
+    number: {
+      name: 'Số',
+      description: 'Vị từ boolean cho kiểm tra số và thuộc tính toán học.',
+    },
   },
   card: {
     result: 'Kết quả',

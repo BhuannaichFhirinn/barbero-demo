@@ -35,6 +35,10 @@ export default {
       name: 'પ્રકાર',
       description: 'JavaScript ના આદિ અને માળખાકીય પ્રકારોની ઓળખ તપાસ.',
     },
+    number: {
+      name: 'સંખ્યા',
+      description: 'સંખ્યાત્મક તપાસ અને ગાણિતિક ગુણધર્મો માટે બૂલિયન પ્રેડિકેટ્સ.',
+    },
   },
   card: {
     result: 'પરિણામ',

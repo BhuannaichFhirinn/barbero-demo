@@ -35,6 +35,10 @@ export default {
       name: '型',
       description: 'JavaScript のプリミティブ型と構造型の型識別チェック。',
     },
+    number: {
+      name: '数値',
+      description: '数値チェックと数学的プロパティのためのブール述語。',
+    },
   },
   card: {
     result: '結果',

@@ -35,6 +35,10 @@ export default {
       name: 'Tipos',
       description: 'Verificações de identidade de tipos primitivos e estruturais de JavaScript.',
     },
+    number: {
+      name: 'Número',
+      description: 'Predicados booleanos para verificações numéricas e propriedades matemáticas.',
+    },
   },
   card: {
     result: 'Resultado',

@@ -35,6 +35,10 @@ export default {
       name: 'ዓይነቶች',
       description: 'የ JavaScript ጥንታዊ እና ሥርዓታዊ ዓይነት መንነት ማረጋገጫዎች።',
     },
+    number: {
+      name: 'ቁጥር',
+      description: 'ለቁጥር ፍተሻዎች እና ለሂሳብ ባህሪያት የቡሊያን ስምምነቶች።',
+    },
   },
   card: {
     result: 'ውጤት',

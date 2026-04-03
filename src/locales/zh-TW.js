@@ -35,6 +35,10 @@ export default {
       name: '型別',
       description: 'JavaScript 原始型別與結構型別的型別識別檢查。',
     },
+    number: {
+      name: '數字',
+      description: '用於數字檢查和數學屬性的布林謂詞。',
+    },
   },
   card: {
     result: '結果',

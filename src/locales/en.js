@@ -35,6 +35,10 @@ export default {
       name: 'Types',
       description: 'JavaScript primitive and structural type identity checks.',
     },
+    number: {
+      name: 'Number',
+      description: 'Boolean predicates for numeric checks and math properties.',
+    },
   },
   card: {
     result: 'Result',

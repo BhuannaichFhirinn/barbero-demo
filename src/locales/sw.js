@@ -35,6 +35,10 @@ export default {
       name: 'Aina',
       description: 'Ukaguzi wa utambulisho wa aina za msingi na muundo wa JavaScript.',
     },
+    number: {
+      name: 'Namba',
+      description: 'Viwakilishi vya boolean kwa ukaguzi wa nambari na mali za kihesabu.',
+    },
   },
   card: {
     result: 'Matokeo',

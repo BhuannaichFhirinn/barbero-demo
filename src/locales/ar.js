@@ -35,6 +35,10 @@ export default {
       name: 'الأنواع',
       description: 'فحص هوية الأنواع البدائية والهيكلية في JavaScript.',
     },
+    number: {
+      name: 'الأرقام',
+      description: 'محددات منطقية لفحوصات الأرقام والخصائص الرياضية.',
+    },
   },
   card: {
     result: 'النتيجة',

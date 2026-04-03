@@ -11,6 +11,8 @@ import {
   xor, nand,
   allPass, anyPass, nonePass, composePredicates,
   isNumber, isString, isBoolean, isSymbol, isBigInt, isPrimitive, isClassInstance,
+  isInteger, isFloat, isPositive, isNegative, isZero,
+  isEven, isOdd, isInRange, isDivisibleBy, isFiniteNumber, isNaNValue,
 } from 'barbero';
 
 export const modules = [
@@ -349,6 +351,138 @@ export const modules = [
         ],
         fn: (value) => isClassInstance(value),
         example: 'isClassInstance(new Date())   // true\nisClassInstance(new Map())    // true\nisClassInstance({})           // false\nisClassInstance([])           // false',
+      },
+    ],
+  },
+
+  {
+    name: 'Number',
+    slug: 'number',
+    description: 'Boolean predicates for numeric checks and math properties.',
+    functions: [
+      {
+        name: 'isInteger',
+        slug: 'isInteger',
+        signature: 'isInteger(value)',
+        description: 'Returns true if the value is an integer, false otherwise. Does not coerce — returns false for NaN, Infinity, and floats.',
+        inputs: [
+          { label: 'value', placeholder: '4' },
+        ],
+        fn: (value) => isInteger(value),
+        example: 'isInteger(4)      // true\nisInteger(4.5)    // false\nisInteger(NaN)    // false',
+      },
+      {
+        name: 'isFloat',
+        slug: 'isFloat',
+        signature: 'isFloat(value)',
+        description: 'Returns true if the value is a finite number that is not an integer, false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '4.5' },
+        ],
+        fn: (value) => isFloat(value),
+        example: 'isFloat(4.5)       // true\nisFloat(4)         // false\nisFloat(Infinity)  // false',
+      },
+      {
+        name: 'isPositive',
+        slug: 'isPositive',
+        signature: 'isPositive(value)',
+        description: 'Returns true if the value is a number strictly greater than zero, false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '1' },
+        ],
+        fn: (value) => isPositive(value),
+        example: 'isPositive(1)     // true\nisPositive(0)     // false\nisPositive(-1)    // false',
+      },
+      {
+        name: 'isNegative',
+        slug: 'isNegative',
+        signature: 'isNegative(value)',
+        description: 'Returns true if the value is a number strictly less than zero, false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '-1' },
+        ],
+        fn: (value) => isNegative(value),
+        example: 'isNegative(-1)    // true\nisNegative(0)     // false\nisNegative(-0)    // false',
+      },
+      {
+        name: 'isZero',
+        slug: 'isZero',
+        signature: 'isZero(value)',
+        description: 'Returns true if the value is zero (0 or -0), false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '0' },
+        ],
+        fn: (value) => isZero(value),
+        example: 'isZero(0)     // true\nisZero(-0)    // true\nisZero(1)     // false',
+      },
+      {
+        name: 'isEven',
+        slug: 'isEven',
+        signature: 'isEven(value)',
+        description: 'Returns true if the value is an integer divisible by 2, false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '4' },
+        ],
+        fn: (value) => isEven(value),
+        example: 'isEven(4)      // true\nisEven(3)      // false\nisEven(2.5)    // false',
+      },
+      {
+        name: 'isOdd',
+        slug: 'isOdd',
+        signature: 'isOdd(value)',
+        description: 'Returns true if the value is an integer not divisible by 2, false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '3' },
+        ],
+        fn: (value) => isOdd(value),
+        example: 'isOdd(3)      // true\nisOdd(4)      // false\nisOdd(3.1)    // false',
+      },
+      {
+        name: 'isInRange',
+        slug: 'isInRange',
+        signature: 'isInRange(value, min, max)',
+        description: 'Returns true if the value is a number within the inclusive range [min, max], false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '5' },
+          { label: 'min', placeholder: '1' },
+          { label: 'max', placeholder: '10' },
+        ],
+        fn: (value, min, max) => isInRange(value, min, max),
+        example: 'isInRange(5, 1, 10)   // true\nisInRange(1, 1, 10)   // true  — inclusive\nisInRange(11, 1, 10)  // false',
+      },
+      {
+        name: 'isDivisibleBy',
+        slug: 'isDivisibleBy',
+        signature: 'isDivisibleBy(value, divisor)',
+        description: 'Returns true if the value is an integer evenly divisible by divisor, false otherwise.',
+        inputs: [
+          { label: 'value', placeholder: '9' },
+          { label: 'divisor', placeholder: '3' },
+        ],
+        fn: (value, divisor) => isDivisibleBy(value, divisor),
+        example: 'isDivisibleBy(9, 3)    // true\nisDivisibleBy(10, 3)   // false\nisDivisibleBy(9, 0)    // false  — zero guard',
+      },
+      {
+        name: 'isFiniteNumber',
+        slug: 'isFiniteNumber',
+        signature: 'isFiniteNumber(value)',
+        description: 'Returns true if the value is a finite number, false otherwise. Returns false for NaN, Infinity, and non-numbers.',
+        inputs: [
+          { label: 'value', placeholder: '42' },
+        ],
+        fn: (value) => isFiniteNumber(value),
+        example: 'isFiniteNumber(42)         // true\nisFiniteNumber(Infinity)   // false\nisFiniteNumber(NaN)        // false',
+      },
+      {
+        name: 'isNaNValue',
+        slug: 'isNaNValue',
+        signature: 'isNaNValue(value)',
+        description: 'Returns true if the value is NaN, false otherwise. Uses Number.isNaN — does not coerce.',
+        inputs: [
+          { label: 'value', placeholder: 'NaN' },
+        ],
+        fn: (value) => isNaNValue(value),
+        example: 'isNaNValue(NaN)        // true\nisNaNValue(undefined)  // false  — unlike global isNaN\nisNaNValue(42)         // false',
       },
     ],
   },

@@ -35,6 +35,10 @@ export default {
       name: 'Tipe',
       description: 'Pemeriksaan identitas tipe untuk tipe primitif dan struktural JavaScript.',
     },
+    number: {
+      name: 'Angka',
+      description: 'Predikat boolean untuk pemeriksaan numerik dan properti matematika.',
+    },
   },
   card: {
     result: 'Hasil',

@@ -35,6 +35,10 @@ export default {
       name: 'Typen',
       description: 'Type-identiteitscontroles voor primitieve en structurele JavaScript-typen.',
     },
+    number: {
+      name: 'Getal',
+      description: 'Booleaanse predicaten voor numerieke controles en wiskundige eigenschappen.',
+    },
   },
   card: {
     result: 'Resultaat',

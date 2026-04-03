@@ -35,6 +35,10 @@ export default {
       name: 'Nau\'uka',
       description: 'Duba tantancewar nau\'in ƙididdiga na JavaScript da tsarinsa.',
     },
+    number: {
+      name: 'Lamba',
+      description: 'Hasashen Boolean don binciken lamba da kaddarorin lissafi.',
+    },
   },
   card: {
     result: 'Sakamako',

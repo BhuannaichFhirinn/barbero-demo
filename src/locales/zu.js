@@ -35,6 +35,10 @@ export default {
       name: 'Izinhlobo',
       description: 'Ukuhlola uhlobo lwamanani asesigabeni se-JavaScript.',
     },
+    number: {
+      name: 'Inombolo',
+      description: 'Izisho ze-Boolean zokuhlola izinombolo nezakhiwo zezibalwa.',
+    },
   },
   card: {
     result: 'Umphumela',

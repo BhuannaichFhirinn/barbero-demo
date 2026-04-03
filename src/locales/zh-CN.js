@@ -35,6 +35,10 @@ export default {
       name: '类型',
       description: 'JavaScript 原始和结构类型的类型标识检查。',
     },
+    number: {
+      name: '数字',
+      description: '用于数字检查和数学属性的布尔谓词。',
+    },
   },
   card: {
     result: '结果',

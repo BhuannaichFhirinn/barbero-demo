@@ -35,6 +35,10 @@ export default {
       name: 'Typen',
       description: 'Typidentitätsprüfungen für primitive und strukturelle JavaScript-Typen.',
     },
+    number: {
+      name: 'Zahl',
+      description: 'Boolesche Prädikate für numerische Prüfungen und mathematische Eigenschaften.',
+    },
   },
   card: {
     result: 'Ergebnis',

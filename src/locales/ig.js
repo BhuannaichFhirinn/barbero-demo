@@ -35,6 +35,10 @@ export default {
       name: 'Ụdị',
       description: 'Nlele njirimara ụdị maka ụdị izugbe na nhazi nke JavaScript.',
     },
+    number: {
+      name: 'Nọmba',
+      description: 'Ihe nkọwa Boolean maka nlele nọmba na ihe nke mgbakọ na mwepụ.',
+    },
   },
   card: {
     result: 'Nsonaazụ',
