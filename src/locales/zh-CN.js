@@ -39,6 +39,10 @@ export default {
       name: '数字',
       description: '用于数字检查和数学属性的布尔谓词。',
     },
+    parsing: {
+      name: '解析',
+      description: '语义布尔识别 — 将字符串和数字转换为布尔值含义。',
+    },
   },
   card: {
     result: '结果',

@@ -39,6 +39,10 @@ export default {
       name: 'Angka',
       description: 'Predikat boolean untuk pemeriksaan numerik dan properti matematika.',
     },
+    parsing: {
+      name: 'Parsing',
+      description: 'Pengenalan boolean semantik — mengubah string dan angka menjadi makna boolean.',
+    },
   },
   card: {
     result: 'Hasil',

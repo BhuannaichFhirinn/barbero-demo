@@ -39,6 +39,10 @@ export default {
       name: 'Lamba',
       description: 'Hasashen Boolean don binciken lamba da kaddarorin lissafi.',
     },
+    parsing: {
+      name: 'Nazari',
+      description: "Gane ma'anar gaskiya — yana canza kirtani da lambobi zuwa ma'anar boolean.",
+    },
   },
   card: {
     result: 'Sakamako',

@@ -39,6 +39,10 @@ export default {
       name: 'Numero',
       description: 'Predicati booleani per controlli numerici e proprietà matematiche.',
     },
+    parsing: {
+      name: 'Parsing',
+      description: 'Riconoscimento booleano semantico — converte stringhe e numeri in significato booleano.',
+    },
   },
   card: {
     result: 'Risultato',

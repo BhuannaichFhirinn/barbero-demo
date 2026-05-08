@@ -39,6 +39,10 @@ export default {
       name: '数値',
       description: '数値チェックと数学的プロパティのためのブール述語。',
     },
+    parsing: {
+      name: 'パース',
+      description: '意味的なブール認識 — 文字列と数値をブール値に変換します。',
+    },
   },
   card: {
     result: '結果',

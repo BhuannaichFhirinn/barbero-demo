@@ -39,6 +39,10 @@ export default {
       name: 'Namba',
       description: 'Viwakilishi vya boolean kwa ukaguzi wa nambari na mali za kihesabu.',
     },
+    parsing: {
+      name: 'Uchanganuzi',
+      description: 'Utambuzi wa boolean wa kisemantiki — hubadilisha mifuatano na nambari kuwa maana ya boolean.',
+    },
   },
   card: {
     result: 'Matokeo',

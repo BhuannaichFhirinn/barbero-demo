@@ -57,7 +57,10 @@ const error = ref(null)
 function evaluate () {
   if (!fnDef.value) return
   try {
-    const args = inputValues.value.map(v => new Function('return ' + v)()) // eslint-disable-line no-new-func
+    const args = inputValues.value.map((v, i) => {
+      if (fnDef.value.inputs[i]?.inputType === 'string') return v
+      return new Function('return ' + v)() // eslint-disable-line no-new-func
+    })
     result.value = fnDef.value.fn(...args)
     error.value = null
   } catch (e) {

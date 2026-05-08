@@ -39,6 +39,10 @@ export default {
       name: 'Zahl',
       description: 'Boolesche Prädikate für numerische Prüfungen und mathematische Eigenschaften.',
     },
+    parsing: {
+      name: 'Parsing',
+      description: 'Semantische boolesche Erkennung — wandelt Zeichenketten und Zahlen in boolesche Bedeutungen um.',
+    },
   },
   card: {
     result: 'Ergebnis',

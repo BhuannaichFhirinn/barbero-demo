@@ -39,6 +39,10 @@ export default {
       name: '數字',
       description: '用於數字檢查和數學屬性的布林謂詞。',
     },
+    parsing: {
+      name: '解析',
+      description: '語義布林識別 — 將字串和數字轉換為布林値含義。',
+    },
   },
   card: {
     result: '結果',

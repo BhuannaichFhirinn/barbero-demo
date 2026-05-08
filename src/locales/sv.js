@@ -39,6 +39,10 @@ export default {
       name: 'Tal',
       description: 'Booleska predikat för numeriska kontroller och matematiska egenskaper.',
     },
+    parsing: {
+      name: 'Parsning',
+      description: 'Semantisk boolesk igenkänning — konverterar strängar och tal till boolesk betydelse.',
+    },
   },
   card: {
     result: 'Resultat',

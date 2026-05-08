@@ -39,6 +39,10 @@ export default {
       name: 'Số',
       description: 'Vị từ boolean cho kiểm tra số và thuộc tính toán học.',
     },
+    parsing: {
+      name: 'Phân tích',
+      description: 'Nhận dạng boolean ngữ nghĩa — chuyển đổi chuỗi và số thành ý nghĩa boolean.',
+    },
   },
   card: {
     result: 'Kết quả',

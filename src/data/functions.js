@@ -499,7 +499,7 @@ export const modules = [
         signature: 'parseBoolean(value)',
         description: 'Returns true if the value is a recognised truthy semantic representation — e.g. "yes", "on", "enabled", 1, true. Returns false for everything else.',
         inputs: [
-          { label: 'value', placeholder: '"yes"' },
+          { label: 'value', placeholder: 'yes', inputType: 'string' },
         ],
         fn: (value) => parseBoolean(value),
         example: 'parseBoolean("yes")      // true\nparseBoolean("enabled")  // true\nparseBoolean(1)          // true\nparseBoolean("no")       // false\nparseBoolean("maybe")    // false',
@@ -510,7 +510,7 @@ export const modules = [
         signature: 'isBooleanable(value)',
         description: 'Returns true if the value is any recognised boolean representation — either truthy or falsy. "no" and "false" are booleanable even though they represent false.',
         inputs: [
-          { label: 'value', placeholder: '"no"' },
+          { label: 'value', placeholder: 'no', inputType: 'string' },
         ],
         fn: (value) => isBooleanable(value),
         example: 'isBooleanable("yes")    // true\nisBooleanable("no")     // true  — falsy but booleanable\nisBooleanable("maybe")  // false\nisBooleanable(null)     // false',
@@ -521,7 +521,7 @@ export const modules = [
         signature: 'isTruthyString(value)',
         description: 'Returns true if the value is one of the recognised truthy semantic representations. Complements isTruthy for string and number input forms.',
         inputs: [
-          { label: 'value', placeholder: '"enabled"' },
+          { label: 'value', placeholder: 'enabled', inputType: 'string' },
         ],
         fn: (value) => isTruthyString(value),
         example: 'isTruthyString("yes")      // true\nisTruthyString("enabled")  // true\nisTruthyString(1)          // true\nisTruthyString("no")       // false',
@@ -532,7 +532,7 @@ export const modules = [
         signature: 'isFalseyString(value)',
         description: 'Returns true if the value is one of the recognised falsy semantic representations. Complements isFalsey for string and number input forms.',
         inputs: [
-          { label: 'value', placeholder: '"disabled"' },
+          { label: 'value', placeholder: 'disabled', inputType: 'string' },
         ],
         fn: (value) => isFalseyString(value),
         example: 'isFalseyString("no")        // true\nisFalseyString("disabled")  // true\nisFalseyString(0)           // true\nisFalseyString("yes")       // false',

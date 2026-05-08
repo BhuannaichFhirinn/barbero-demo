@@ -39,6 +39,10 @@ export default {
       name: 'Nọ́mbà',
       description: 'Àwọn asọtẹlẹ Boolean fún àyẹ̀wò nọ́mbà àti àwọn ohun-ìní mathématiques.',
     },
+    parsing: {
+      name: 'Ìtúpalẹ̀',
+      description: 'Ìdámọ̀ boolean àtọ̀wọ̀dọ̀wọ — ń yí okun àti nọ́ńbà padà sí ìtumò boolean.',
+    },
   },
   card: {
     result: 'Abajade',

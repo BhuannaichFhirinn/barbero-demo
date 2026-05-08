@@ -39,6 +39,10 @@ export default {
       name: 'Getal',
       description: 'Booleaanse predicaten voor numerieke controles en wiskundige eigenschappen.',
     },
+    parsing: {
+      name: 'Parsing',
+      description: 'Semantische booleaanse herkenning — converteert strings en getallen naar booleaanse betekenis.',
+    },
   },
   card: {
     result: 'Resultaat',

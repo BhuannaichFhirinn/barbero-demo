@@ -39,6 +39,10 @@ export default {
       name: 'Liczba',
       description: 'Predykaty logiczne do sprawdzania liczb i właściwości matematycznych.',
     },
+    parsing: {
+      name: 'Parsowanie',
+      description: 'Semantyczne rozpoznawanie wartości logicznych — konwertuje ciągi i liczby na wartości logiczne.',
+    },
   },
   card: {
     result: 'Wynik',

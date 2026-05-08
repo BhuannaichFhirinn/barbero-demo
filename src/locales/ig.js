@@ -39,6 +39,10 @@ export default {
       name: 'Nọmba',
       description: 'Ihe nkọwa Boolean maka nlele nọmba na ihe nke mgbakọ na mwepụ.',
     },
+    parsing: {
+      name: 'Nyocha',
+      description: 'Īchọpụta boolean nwere ọtụtụ — na-atụgharị eriri na ọnụọgụ ka ọ bụrụ boolean.',
+    },
   },
   card: {
     result: 'Nsonaazụ',

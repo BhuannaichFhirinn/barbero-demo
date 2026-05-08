@@ -39,6 +39,10 @@ export default {
       name: 'Inombolo',
       description: 'Izisho ze-Boolean zokuhlola izinombolo nezakhiwo zezibalwa.',
     },
+    parsing: {
+      name: 'Ukuhlaziya',
+      description: 'Ukubona kwe-boolean kwenhlalo-mcabango — iguqula izintambo nezinombolo encazelweni ye-boolean.',
+    },
   },
   card: {
     result: 'Umphumela',

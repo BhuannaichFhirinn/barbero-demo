@@ -39,6 +39,10 @@ export default {
       name: 'Nombre',
       description: 'Prédicats booléens pour les vérifications numériques et les propriétés mathématiques.',
     },
+    parsing: {
+      name: 'Analyse',
+      description: 'Reconnaissance booléenne sémantique — convertit des chaînes et des nombres en sens booléen.',
+    },
   },
   card: {
     result: 'Résultat',

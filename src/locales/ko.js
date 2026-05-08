@@ -39,6 +39,10 @@ export default {
       name: '숫자',
       description: '수치 검사 및 수학적 속성을 위한 불리언 조건자.',
     },
+    parsing: {
+      name: '파싱',
+      description: '의미적 불리언 인식 — 문자열과 숫자를 불리언 의미로 변환합니다.',
+    },
   },
   card: {
     result: '결과',

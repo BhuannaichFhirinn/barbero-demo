@@ -39,6 +39,10 @@ export default {
       name: 'Number',
       description: 'Boolean predicates for numeric checks and math properties.',
     },
+    parsing: {
+      name: 'Parsing',
+      description: 'Semantic boolean recognition — converts strings and numbers to boolean meaning.',
+    },
   },
   card: {
     result: 'Result',
