@@ -12,8 +12,8 @@ importers:
         specifier: 7.4.47
         version: 7.4.47
       barbero:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
       vue:
         specifier: ^3.4.31
         version: 3.5.29
@@ -889,8 +889,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  barbero@1.1.0:
-    resolution: {integrity: sha512-isDmRDnIxFAn+0yCnFgAd0iHPnRJwmYRDPM7+qsNGwWzjiZDTmCEgBjS1d4g7GM2synYrwiOlqyeSQr1iumhpA==}
+  barbero@1.2.0:
+    resolution: {integrity: sha512-bDOU3VkPtQJPtUdbSC9cLfDJZlbrDhW5fEOGw8065DIzl4YWtYuAIHhxNJvRI0Q2Tf63mLupQrmziH8Lc1W56w==}
 
   baseline-browser-mapping@2.10.0:
     resolution: {integrity: sha512-lIyg0szRfYbiy67j9KN8IyeD7q7hcmqnJ1ddWmNt19ItGpNN64mnllmxUNFIOdOm6by97jlL6wfpTTJrmnjWAA==}
@@ -3546,7 +3546,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  barbero@1.1.0: {}
+  barbero@1.2.0: {}
 
   baseline-browser-mapping@2.10.0: {}
 

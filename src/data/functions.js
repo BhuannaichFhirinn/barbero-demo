@@ -13,6 +13,7 @@ import {
   isNumber, isString, isBoolean, isSymbol, isBigInt, isPrimitive, isClassInstance,
   isInteger, isFloat, isPositive, isNegative, isZero,
   isEven, isOdd, isInRange, isDivisibleBy, isFiniteNumber, isNaNValue,
+  parseBoolean, isBooleanable, isTruthyString, isFalseyString,
 } from 'barbero';
 
 export const modules = [
@@ -483,6 +484,58 @@ export const modules = [
         ],
         fn: (value) => isNaNValue(value),
         example: 'isNaNValue(NaN)        // true\nisNaNValue(undefined)  // false  — unlike global isNaN\nisNaNValue(42)         // false',
+      },
+    ],
+  },
+
+  {
+    name: 'Parsing',
+    slug: 'parsing',
+    description: 'Semantic boolean recognition — converts strings and numbers to boolean meaning.',
+    functions: [
+      {
+        name: 'parseBoolean',
+        slug: 'parseBoolean',
+        signature: 'parseBoolean(value)',
+        description: 'Returns true if the value is a recognised truthy semantic representation — e.g. "yes", "on", "enabled", 1, true. Returns false for everything else.',
+        inputs: [
+          { label: 'value', placeholder: '"yes"' },
+        ],
+        fn: (value) => parseBoolean(value),
+        example: 'parseBoolean("yes")      // true\nparseBoolean("enabled")  // true\nparseBoolean(1)          // true\nparseBoolean("no")       // false\nparseBoolean("maybe")    // false',
+      },
+      {
+        name: 'isBooleanable',
+        slug: 'isBooleanable',
+        signature: 'isBooleanable(value)',
+        description: 'Returns true if the value is any recognised boolean representation — either truthy or falsy. "no" and "false" are booleanable even though they represent false.',
+        inputs: [
+          { label: 'value', placeholder: '"no"' },
+        ],
+        fn: (value) => isBooleanable(value),
+        example: 'isBooleanable("yes")    // true\nisBooleanable("no")     // true  — falsy but booleanable\nisBooleanable("maybe")  // false\nisBooleanable(null)     // false',
+      },
+      {
+        name: 'isTruthyString',
+        slug: 'isTruthyString',
+        signature: 'isTruthyString(value)',
+        description: 'Returns true if the value is one of the recognised truthy semantic representations. Complements isTruthy for string and number input forms.',
+        inputs: [
+          { label: 'value', placeholder: '"enabled"' },
+        ],
+        fn: (value) => isTruthyString(value),
+        example: 'isTruthyString("yes")      // true\nisTruthyString("enabled")  // true\nisTruthyString(1)          // true\nisTruthyString("no")       // false',
+      },
+      {
+        name: 'isFalseyString',
+        slug: 'isFalseyString',
+        signature: 'isFalseyString(value)',
+        description: 'Returns true if the value is one of the recognised falsy semantic representations. Complements isFalsey for string and number input forms.',
+        inputs: [
+          { label: 'value', placeholder: '"disabled"' },
+        ],
+        fn: (value) => isFalseyString(value),
+        example: 'isFalseyString("no")        // true\nisFalseyString("disabled")  // true\nisFalseyString(0)           // true\nisFalseyString("yes")       // false',
       },
     ],
   },
